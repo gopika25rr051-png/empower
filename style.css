@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.hero-content h2 {
+    margin: 15px 0;
+}
+
+.quote {
+    font-style: italic;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* BUTTON */
+.btn {
+    background: #ff4d6d;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e63950;
+    transform: scale(1.1);
+}
+
+/* SKILLS SECTION */
+.skills {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin: 20px;
+    width: 220px;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #ffe0e9;
+}
+
+/* WARNING */
+.warning {
+    margin-top: 40px;
+}
+
+.warning a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.delay1 { animation-delay: 0.5s; }
+.delay2 { animation-delay: 1s; }
+.delay3 { animation-delay: 1.5s; }
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1.5s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
